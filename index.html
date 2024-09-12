@@ -5,10 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+
+<style>
+    *{
+        padding:0;
+        margin: 0;
+    }
+header{
+    background: brown;
+    height: 100vh;
+    width: 100vw;
+    position:relative;
+}
+header>nav>ul{
+       list-style: none; 
+       display: flex;
+       position: absolute;
+       right: 0;
+       margin-right: 20px;
+       margin-top: 10px;
+
+}
+header>nav>ul>li{
+    text-decoration: none;
+    margin-right:20px;
+    color: white;
+}
+#my{
+ position: absolute;
+ left: 0;
+ top: 50px;
+}
+header>main{
+color: white;
+}
+header>main>h1{
+    position: relative;
+    top: 430px;
+    left: 830px;
+}
+
+
+</style>
 </head>
 
 <body>
     <!-- header section -->
+  
     <header>
         <nav>
             <ul>
@@ -19,14 +62,16 @@
                 <li>Working Experience and Contact</li>
             </ul>
         </nav>
-    </header>
-    <!-- Hero  section -->
-    <main>
+         <main>
         <h1>Welcome</h1>
         <h2>I’m Ashan Nuwantha</h2>
         <h3>software engineering in Sri Lanka</h3>
     </main>
-    <img src="photos/[removal.ai]_e11f4f18-07ec-4351-80d6-847c9672655f_WhatsApp Image 2024-07-25 at 21.png" alt="">
+         <img id="my" src="photos/[removal.ai]_e11f4f18-07ec-4351-80d6-847c9672655f_WhatsApp Image 2024-07-25 at 21.png" alt="">
+    </header>
+    <!-- Hero  section -->
+   
+   
     
 <img src="photos/icons8-twitter-48.png" alt="">
 <img src="photos/icons8-instagram-100.png" alt="">
