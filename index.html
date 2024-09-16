@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 
 
 <style>
@@ -12,8 +14,8 @@
         margin: 0;
     }
 header{
-    background: brown;
-    height: 100vh;
+    background: #442e2ee0;
+    height: 125vh;
     width: 100vw;
     position:relative;
 }
@@ -31,6 +33,10 @@ header>nav>ul>li{
     margin-right:20px;
     color: white;
 }
+header>nav>ul>li:hover{
+  
+    color: rgb(129, 255, 161);
+}
 #my{
  position: absolute;
  left: 0;
@@ -44,7 +50,75 @@ header>main>h1{
     top: 430px;
     left: 830px;
 }
+header>main>h2{
+    position: relative;
+    top: 440px;
+    left: 930px;
+}
+header>main>h3{
+    position: relative;
+    top: 440px;
+    left: 1100px;
+}
+#twitter{
+    position: absolute;
+ left: 200px;
+ top: 900px;
 
+}
+#instragram{
+    position: absolute;
+ left: 280px;
+ top: 870px;
+
+}
+#facebook{
+    position: absolute;
+ left: 390px;
+ top: 870px;
+
+}
+main>section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main>div{
+    top: 0;
+position: sticky;
+width: 100vw;
+height: 50px;
+
+}
+
+
+
+#myabout{
+    width: 600px;
+    height: 700px;
+
+  display: flex
+    
+}
+.about>section>div>p{
+    width: 500px;
+    position: relative;
+    right: 80px;
+    top: 50px;
+}
+.about>section>div>h2{
+    width: 500px;
+    position: relative;
+    right: 80px;
+}
+.edu>div{
+    top: 0;
+position: sticky;
+width: 100vw;
+height: 50px
+
+}
 
 </style>
 </head>
@@ -54,7 +128,7 @@ header>main>h1{
   
     <header>
         <nav>
-            <ul>
+            <ul >
                 <li>Home</li>
                 <li>About Me</li>
                 <li>My Skills</li>
@@ -62,39 +136,52 @@ header>main>h1{
                 <li>Working Experience and Contact</li>
             </ul>
         </nav>
-         <main>
+         <main data-aos="zoom-in-right">
         <h1>Welcome</h1>
         <h2>I’m Ashan Nuwantha</h2>
         <h3>software engineering in Sri Lanka</h3>
     </main>
          <img id="my" src="photos/[removal.ai]_e11f4f18-07ec-4351-80d6-847c9672655f_WhatsApp Image 2024-07-25 at 21.png" alt="">
+         <img id="twitter" src="photos/icons8-twitter-48.png" alt="">
+<img id="instragram" src="photos/icons8-instagram-100.png" alt="">
+<img id="facebook" src="photos/icons8-facebook-100.png" alt="">
     </header>
     <!-- Hero  section -->
    
    
     
-<img src="photos/icons8-twitter-48.png" alt="">
-<img src="photos/icons8-instagram-100.png" alt="">
-<img src="photos/icons8-facebook-100.png" alt="">
 
-<main>
-<h1>About Me</h1>
-<img src="photos/WhatsApp Image 2024-08-13 at 22.30.56.jpeg" alt="">
 
-<section>
-
+<main class="about">
     <div>
+         <h1 >About Me</h1>
+    </div>
+   
+    <section>
+        <div>
         <h2>Hello My Name is Ashan Nuwantha.</h2>
         <p>I am an undergraduate student in Software Engineering at the highly recommended IJSE institute. With skills in both front-end and back-end technologies, I specialize in creating web and mobile applications. Proficient in HTML, CSS, JavaScript frameworks like React and Angular, as well as back-end technologies such as Node.js, Express, and SQL/NoSQL databases, I deliver comprehensive solutions. As a quick learner, I constantly seek opportunities to enhance my knowledge and am committed to providing exceptional service as a developer.</p>
     </div>
+
+<img id="myabout" src="photos/WhatsApp Image 2024-08-13 at 22.30.56.jpeg" alt="">
+
+    </section>
+
+
+<section>
+
+    
 
 </section>
 </main>
 <section>
     
 
-<main>
-    <h1>Education Details</h1>
+<main class="edu">
+    <div>
+        <h1>Education Details</h1>
+    </div>
+    
     <img src="photos/images.jpeg" alt="">
     <p>Fristly i went to the polpitita School .this is my frist school </p>
     <img src="photos/image.jpeg" alt="">
@@ -188,7 +275,9 @@ header>main>h1{
 
 </main>
 
-
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
