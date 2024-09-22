@@ -16,9 +16,10 @@
             box-sizing: border-box;
         }
 
-        body{
+        body {
             overflow-x: hidden;
         }
+
         header {
             background: #442e2ee0;
             height: 125vh;
@@ -61,6 +62,15 @@
             position: relative;
             top: 430px;
             left: 830px;
+
+        }
+
+        .about>div>h1 {
+
+            z-index: 1;
+            background-color: white;
+            width: 100vw;
+            height: 50px;
         }
 
         header>main>h2 {
@@ -114,6 +124,7 @@
 
 
 
+
         #myabout {
             width: 600px;
             height: 700px;
@@ -133,9 +144,10 @@
             position: relative;
             right: 80px;
         }
-        .edu{
+
+        .edu {
             position: relative;
-            height:100vh ;
+            height: 100vh;
         }
 
         .edu>div {
@@ -147,7 +159,7 @@
             height: 50px
         }
 
-        .edu>div>h1 {}
+
 
         #bach1 {
             margin: 100px;
@@ -187,9 +199,10 @@
             position: relative;
             left: 120%;
             bottom: 50px;
-            
+
         }
-        #first{
+
+        #first {
             position: relative;
             bottom: 50px;
         }
@@ -202,6 +215,55 @@
             margin: auto;
             width: 500px;
         }
+
+        .myproject>h1 {
+            top: 0;
+            position: sticky;
+            width: 100vw;
+            height: 50px;
+            background-color: white;
+            z-index: 1;
+        }
+
+        #MPphoto {
+            position: relative;
+            margin-right: 100px;
+            border-radius: 20px;
+            right: 250px;
+            top: 50px;
+         
+        }
+
+        .myproject>section:first-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #myprojectlist>li{
+            font-weight: bold;
+            font-size: x-large;
+            height: 50px;
+         
+          
+        }
+        #myprojectlist{
+          margin-top:150px ;   
+        }
+        #myprojectp{
+        position: relative;
+        top: 50px;
+        }
+        section>.myproject{
+            height:80vh ;
+        }
+        #myprojectp{
+            position: relative;
+            width: 100vw;
+            top: 120px;
+        }
+       
+     
     </style>
 </head>
 
@@ -273,7 +335,7 @@
                 <p id="first">Fristly i went to the polpitita School .this is my frist school </p>
                 <p id="after">After that came to Central College where I took up A'L </p>
             </div>
-            
+
             <main id="eduBatches">
                 <img id="bach1" src="photos/images.jpeg" alt="">
                 <img id="bach2" src="photos/image.jpeg" alt="">
@@ -289,26 +351,25 @@
         </main>
     </section>
 
-    <section>
-        <main>
-            <h1>My Projects</h1>
-            <img src="photos/istockphoto-1335717953-612x612.jpg" alt="">
-            <ul>
-                <ol>
+<section>
+    <main class="myproject">
+        <h1>My Projects</h1>
+        <section>
+            <img id="MPphoto" src="photos/istockphoto-1335717953-612x612.jpg" alt="">
+            <ul id="myprojectlist">
                     <li>Service Projects</li>
                     <li>Car Sale Projects</li>
                     <li>Business Projects</li>
-                </ol>
             </ul>
-            <p>In my software projects, I focus on creating solutions that are both practical and innovative. Whether
-                it's developing applications for business management, enhancing user experiences, or automating complex
-                processes, my goal is to deliver software that meets real-world needs. Each project reflects my
-                commitment to quality, efficiency, and continuous improvement in the ever-evolving tech landscape</p>
-    </section>
 
+        </section>
+        <p id="myprojectp">In my software projects, I focus on creating solutions that are both practical and innovative. Whether
+            it's developing applications for business management, enhancing user experiences, or automating complex
+            processes, my goal is to deliver software that meets real-world needs. Each project reflects my
+            commitment to quality, efficiency, and continuous improvement in the ever-evolving tech landscape</p>
     </main>
     <section>
-        <main>
+        <main></section>
             <h1>Gallery</h1>
             <img src="photos/WhatsApp Image 2024-08-12 at 14.16.37.jpeg" alt="">
             <img src="photos/WhatsApp Image 2024-08-12 at 14.16.37 (copy).jpeg" alt="">
